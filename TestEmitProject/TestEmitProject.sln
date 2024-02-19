@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddOrEven2", "OddOrEven2\OddOrEven2.csproj", "{A29897B6-D117-497C-A03D-CC7971D8776D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddOrEven2_Emit", "OddOrEven2_Emit\OddOrEven2_Emit.csproj", "{88401FDA-88F5-412B-B901-24D3E398A9C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A29897B6-D117-497C-A03D-CC7971D8776D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29897B6-D117-497C-A03D-CC7971D8776D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29897B6-D117-497C-A03D-CC7971D8776D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29897B6-D117-497C-A03D-CC7971D8776D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88401FDA-88F5-412B-B901-24D3E398A9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88401FDA-88F5-412B-B901-24D3E398A9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88401FDA-88F5-412B-B901-24D3E398A9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88401FDA-88F5-412B-B901-24D3E398A9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

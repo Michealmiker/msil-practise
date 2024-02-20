@@ -32,19 +32,19 @@ var methodReadLine = typeof(Console)
     .GetMethod("ReadLine", BindingFlags.Public | BindingFlags.Static)!;
 
 var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(
-    new AssemblyName(AssemblyName),
+    new(AssemblyName),
     AssemblyBuilderAccess.RunAndCollect);
 var moduleBuilder = assemblyBuilder.DefineDynamicModule(ModuleName);
 var evenTypeBuilder = moduleBuilder.DefineType(
     ClassName,
-    TypeAttributes.Public | TypeAttributes.AutoClass | TypeAttributes.AnsiClass | TypeAttributes.Class);
+    TypeAttributes.Public | TypeAttributes.AnsiClass);
 var externMethod = evenTypeBuilder.DefinePInvokeMethod(
     ExternMethodName,
     DllName,
     MethodAttributes.Public | MethodAttributes.Static | MethodAttributes.PinvokeImpl,
     CallingConventions.VarArgs,
     typeInt,
-    new[] { typeString, typeString },
+    [typeString, typeString],
     CallingConvention.Cdecl,
     CharSet.None);
 externMethod.SetImplementationFlags(MethodImplAttributes.PreserveSig);
